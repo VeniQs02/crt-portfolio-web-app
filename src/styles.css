@@ -1,8 +1,12 @@
 body{
-  background-color: darkslategray;
+  background-color: #0f0f0f;
   font-family: "Courier Prime", monospace;
   font-weight: 400;
   font-style: normal;
-  color: #666666;
+  color: #ffc700;
   font-size: 1.1rem;
+}
+
+html{
+  height: 100%;
 }
