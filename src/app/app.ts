@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import {DottedText} from './components/dotted-text/dotted-text';
+import {TracklistRow} from './components/dotted-text/tracklist-row.component';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, DottedText],
+  imports: [RouterOutlet, TracklistRow, TranslatePipe],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -1,0 +1,26 @@
+{
+  "dotted": {
+    "text": {
+      "9bits": "9bits (ft. mobile junior dev)",
+      "bachelorsThesis":"obrona pracy licencjackiej",
+      "nekken": "nekken (ft. frontend stażysta)",
+      "brandbo": "brandbo (ft. grafik montażysta)",
+      "uwb": "uwb informatyka",
+      "pogotowieKomputerowe": "pogotowie komputerowe (ft.serwisant sprzętu)",
+      "highSchool": "liceum na profilu matematycznym",
+      "codingClub": "kółko programistyczne",
+      "birthDate": ""
+    },
+    "tooltip": {
+      "9bits": "rozwój aplikacji smyka",
+      "bachelorsThesis":"modernizacja lokalnego biznesu za pomocą aplikacji internetowej - zdane na dwie 5",
+      "nekken": "pierwsze podrygi w angularze",
+      "brandbo": "montaż filmów, i edycja produktów koncepcyjnych - https://brandbo.pl/",
+      "uwb": "3 letnie studnia dzienne",
+      "pogotowieKomputerowe": "helpdesk, naprawy sprzętu, instalacja oprogramowania",
+      "highSchool": "matury zdane, angielski 100%, matematyka 96%",
+      "codingClub": "zetknięcie z konceptem kodowania - proste skrypty pythonowe i html w gimnazjum",
+      "birthDate": "init"
+    }
+  }
+}

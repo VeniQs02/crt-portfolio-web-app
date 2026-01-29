@@ -1,16 +1,17 @@
-.dotted-wrapper {
+.tracklist-wrapper {
   display: flex;
   justify-content: center;
 }
 
-/*.dotted-line::after{*/
+/*.tracklist-dotted-line::after{*/
 /*  content:"..........................................................................................................................................................................................................";*/
 /*}*/
 
-.dotted-number {
+.tracklist-number {
 }
 
-.dotted-text {
+.tracklist-text {
+  display: flex;
   text-align: end;
   padding-left: 8px;
 }
@@ -19,6 +20,17 @@ p{
   margin: 0;
   background: #0f0f0f;
 }
+
+.tracklist-tooltip{
+  display: none;
+  position: absolute;
+
+}
+
+/*p:hover .tracklist-tooltip{*/
+/*  cursor: help;*/
+/*  display: block;*/
+/*}*/
 
 
 

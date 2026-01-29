@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DottedText } from './dotted-text';
+import { TracklistRow } from './tracklist-row.component';
 
 describe('DottedText', () => {
-  let component: DottedText;
-  let fixture: ComponentFixture<DottedText>;
+  let component: TracklistRow;
+  let fixture: ComponentFixture<TracklistRow>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DottedText]
+      imports: [TracklistRow]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DottedText);
+    fixture = TestBed.createComponent(TracklistRow);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
