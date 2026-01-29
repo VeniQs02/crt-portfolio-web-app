@@ -1,0 +1,22 @@
+.tracklistRowWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.tracklistText {
+  display: flex;
+  text-align: end;
+  padding-left: 8px;
+}
+
+p{
+  margin: 0;
+  background: #0f0f0f;
+}
+
+p:hover{
+  cursor: help;
+}
+
+
+
