@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
   selector: 'tracklist-row',
@@ -10,13 +10,28 @@ export class TracklistRow {
   @Input() tracklistNumber!: string;
   @Input() tracklistText!: string;
   @Input() tracklistTooltip!: string;
-  dots: string = '';
+  @Input() tracklistTooltipTime!: string;
+  @Output() hoverTooltip = new EventEmitter<string | null>();
+  @Output() hoverTooltipTime = new EventEmitter<string | null>();
 
   private MAX_LENGTH: number = 48;
+
   private dotCount: number = 0;
+  protected dots: string = '';
 
   ngOnChanges() {
     this.dotCount = this.MAX_LENGTH - [...this.tracklistText].length;
     this.dots = '.'.repeat(this.dotCount);
+  }
+
+  onEnter() {
+    this.hoverTooltip.emit(this.tracklistTooltip);
+    this.hoverTooltipTime.emit(this.tracklistTooltipTime);
+  }
+
+  onLeave() {
+    this.hoverTooltip.emit(null);
+    this.hoverTooltipTime.emit(null);
+
   }
 }

@@ -1,34 +1,61 @@
 <div class="tracklistWrapper">
   <tracklist-row tracklistNumber="14.10.2024"
                  tracklistText="{{'dotted.text.9bits' | translate}}"
-                 tracklistTooltip="{{'dotted.tooltip.9bits' | translate}}"/>
+                 tracklistTooltip="{{'dotted.tooltip.9bits' | translate}}"
+                 tracklistTooltipTime="{{'dotted.tooltipTime.9bits' | translate}}"
+                 (hoverTooltip)="setTooltip($event)"
+                 (hoverTooltipTime)="setTooltipTime($event)"/>
   <tracklist-row tracklistNumber="31.06.2024"
                  tracklistText="{{'dotted.text.bachelorsThesis' | translate}}"
-                 tracklistTooltip="{{'dotted.tooltip.bachelorsThesis' | translate}}"/>
+                 tracklistTooltip="{{'dotted.tooltip.bachelorsThesis' | translate}}"
+                 tracklistTooltipTime="{{'dotted.tooltipTime.bachelorsThesis' | translate}}"
+                 (hoverTooltip)="setTooltip($event)"
+                 (hoverTooltipTime)="setTooltipTime($event)"/>
   <tracklist-row tracklistNumber="15.08.2023"
                  tracklistText="{{'dotted.text.nekken' | translate}}"
-                 tracklistTooltip="{{'dotted.tooltip.nekken' | translate}}"/>
+                 tracklistTooltip="{{'dotted.tooltip.nekken' | translate}}"
+                 tracklistTooltipTime="{{'dotted.tooltipTime.nekken' | translate}}"
+                 (hoverTooltip)="setTooltip($event)"
+                 (hoverTooltipTime)="setTooltipTime($event)"/>
   <tracklist-row tracklistNumber="01.02.2023"
                  tracklistText="{{'dotted.text.brandbo' | translate}}"
-                 tracklistTooltip="{{'dotted.tooltip.brandbo' | translate}}"/>
+                 tracklistTooltip="{{'dotted.tooltip.brandbo' | translate}}"
+                 tracklistTooltipTime="{{'dotted.tooltipTime.brandbo' | translate}}"
+                 (hoverTooltip)="setTooltip($event)"
+                 (hoverTooltipTime)="setTooltipTime($event)"/>
   <tracklist-row tracklistNumber="01.10.2021"
                  tracklistText="{{'dotted.text.uwb' | translate}}"
-                 tracklistTooltip="{{'dotted.tooltip.uwb' | translate}}"/>
+                 tracklistTooltip="{{'dotted.tooltip.uwb' | translate}}"
+                 tracklistTooltipTime="{{'dotted.tooltipTime.uwb' | translate}}"
+                 (hoverTooltip)="setTooltip($event)"
+                 (hoverTooltipTime)="setTooltipTime($event)"/>
   <tracklist-row tracklistNumber="31.06.2021"
                  tracklistText="{{'dotted.text.pogotowieKomputerowe' | translate}}"
-                 tracklistTooltip="{{'dotted.tooltip.pogotowieKomputerowe' | translate}}"/>
+                 tracklistTooltip="{{'dotted.tooltip.pogotowieKomputerowe' | translate}}"
+                 tracklistTooltipTime="{{'dotted.tooltipTime.pogotowieKomputerowe' | translate}}"
+                 (hoverTooltip)="setTooltip($event)"
+                 (hoverTooltipTime)="setTooltipTime($event)"/>
   <tracklist-row tracklistNumber="01.09.2018"
                  tracklistText="{{'dotted.text.highSchool' | translate}}"
-                 tracklistTooltip="{{'dotted.tooltip.highSchool' | translate}}"/>
+                 tracklistTooltip="{{'dotted.tooltip.highSchool' | translate}}"
+                 tracklistTooltipTime="{{'dotted.tooltipTime.highSchool' | translate}}"
+                 (hoverTooltip)="setTooltip($event)"
+                 (hoverTooltipTime)="setTooltipTime($event)"/>
   <tracklist-row tracklistNumber="XX.09.2016"
                  tracklistText="{{'dotted.text.codingClub' | translate}}"
-                 tracklistTooltip="{{'dotted.tooltip.codingClub' | translate}}"/>
+                 tracklistTooltip="{{'dotted.tooltip.codingClub' | translate}}"
+                 tracklistTooltipTime="{{'dotted.tooltipTime.codingClub' | translate}}"
+                 (hoverTooltip)="setTooltip($event)"
+                 (hoverTooltipTime)="setTooltipTime($event)"/>
   <tracklist-row tracklistNumber="27.06.2003"
                  tracklistText="{{'dotted.text.birthDate' | translate}}"
-                 tracklistTooltip="{{'dotted.tooltip.birthDate' | translate}}"/>
+                 tracklistTooltip="{{'dotted.tooltip.birthDate' | translate}}"
+                 tracklistTooltipTime="{{'dotted.tooltipTime.birthDate' | translate}}"
+                 (hoverTooltip)="setTooltip($event)"
+                 (hoverTooltipTime)="setTooltipTime($event)"/>
 
-  <div class="tracklistTooltipDisplay">
-    <!--    {{displayedTooltip}}-->
-    cokolwiek
+  <div class="tracklistTooltipDisplay" [class.visible]="hasTooltip()">
+    <span>{{displayedTooltipTime}}</span>
+    <span>{{displayedTooltip}}</span>
   </div>
 </div>

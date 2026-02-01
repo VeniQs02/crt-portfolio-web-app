@@ -4,13 +4,26 @@ import {TranslatePipe} from "@ngx-translate/core";
 
 @Component({
   selector: 'tracklist',
-    imports: [
-        TracklistRow,
-        TranslatePipe
-    ],
+  imports: [
+    TracklistRow,
+    TranslatePipe,
+  ],
   templateUrl: './tracklist.html',
   styleUrl: './tracklist.css',
 })
 export class Tracklist {
-    private displayedTooltip: string = '';
+    protected displayedTooltip: string | null = null;
+    protected displayedTooltipTime: string | null = null;
+
+  setTooltip(text: string | null) {
+    this.displayedTooltip = text;
+  }
+
+  setTooltipTime(text: string | null) {
+    this.displayedTooltipTime = text;
+  }
+
+  hasTooltip(){
+    return this.displayedTooltip != null
+  }
 }

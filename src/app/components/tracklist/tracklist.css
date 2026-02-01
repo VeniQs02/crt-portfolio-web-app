@@ -11,9 +11,15 @@ tracklist-row:hover {
 }
 
 .tracklistTooltipDisplay {
+  display: none;
+  text-align: center;
+  flex-direction: column;
   margin: 20px;
-  padding: 20px;
+  padding: 30px;
   border: #132123 solid 1px;
-  width: 100px;
-  min-height: 50px;
+  width: max-content;
+}
+
+.visible{
+  display: flex;
 }
