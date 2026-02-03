@@ -12,7 +12,7 @@
       "birthDate": ""
     },
     "tooltip": {
-      "9bits": "praca przy wielu projektach, ale przede wszystkim rozwój aplikacji smyka",
+      "9bits": "praca przy wielu projektach mobilkowych, ale przede wszystkim rozwój aplikacji android smyka",
       "bachelorsThesis": "tematem była modernizacja lokalnego biznesu za pomocą aplikacji internetowej - zdane na dwie piątki",
       "nekken": "pierwsze podrygi w angularze",
       "brandbo": "montaż filmów, i edycja produktów koncepcyjnych - https://brandbo.pl/",
@@ -20,18 +20,7 @@
       "pogotowieKomputerowe": "helpdesk, naprawy sprzętu, instalacja oprogramowania",
       "highSchool": "matury - angielski 100%, matematyka 96%",
       "codingClub": "zetknięcie z konceptem kodowania - proste skrypty pythonowe i html w gimnazjum",
-      "birthDate": "init"
-    },
-    "tooltipTime": {
-      "9bits": "obecnie",
-      "bachelorsThesis": "",
-      "nekken": "1 miesiąc",
-      "brandbo": "3 miesiące",
-      "uwb": "3 lata",
-      "pogotowieKomputerowe": "3.5 roku",
-      "highSchool": "3 lata",
-      "codingClub": "1 rok",
-      "birthDate": ""
+      "birthDate": "wstawić tutaj generyczny programistyczny żart z urodzin typu \"init\""
     }
   }
 }

@@ -28,10 +28,4 @@ export class TracklistRow {
     this.hoverTooltip.emit(this.tracklistTooltip);
     this.hoverTooltipTime.emit(this.tracklistTooltipTime);
   }
-
-  onLeave() {
-    this.hoverTooltip.emit(null);
-    this.hoverTooltipTime.emit(null);
-
-  }
 }

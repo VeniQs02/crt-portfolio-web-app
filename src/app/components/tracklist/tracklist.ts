@@ -15,6 +15,9 @@ export class Tracklist {
   protected displayedTooltip: string | null = null;
   protected displayedTooltipTime: string | null = null;
 
+  private today: Date | undefined;
+  private currentWorkHireDate: Date = new Date('2024-10-15');
+
   setTooltip(text: string | null) {
     this.displayedTooltip = text;
   }
@@ -26,4 +29,61 @@ export class Tracklist {
   hasTooltip() {
     return this.displayedTooltip != null
   }
+
+  displayYearAndMonth(year?: number | null, month?: number | null) {
+    if (year == null && month == null) {
+      this.today = new Date()
+
+      month =
+        (this.today.getFullYear() - this.currentWorkHireDate.getFullYear()) * 12 +
+        (this.today.getMonth() - this.currentWorkHireDate.getMonth());
+
+      year = Math.floor(month / 12);
+      month %= 12;
+    }
+
+    let yearText: string;
+    switch (year) {
+      case 1:
+        yearText = "rok";
+        break;
+      case 2:
+      case 3:
+      case 4:
+        yearText = "lata";
+        break;
+      case 3.5:
+        yearText = "roku";
+        break;
+      default:
+        yearText = "lat";
+        break;
+    }
+
+    let monthText: string;
+    switch (month) {
+      case 1:
+        monthText = "miesiąc";
+        break;
+      case 2:
+      case 3:
+      case 4:
+        monthText = "miesiące";
+        break;
+      default:
+        monthText = "miesięcy";
+        break;
+    }
+
+    let message = ''
+    if (year != null) {
+      message += year + ' ' + yearText + ' '
+    }
+    if (month != null) {
+      message += month + ' ' + monthText
+    }
+
+    return message;
+  }
+
 }
