@@ -56,6 +56,9 @@
 
   <div class="tracklistTooltipDisplay" [class.visible]="hasTooltip()">
     <span>{{ displayedTooltipTime }}</span>
-    <span>{{ displayedTooltip }}</span>
+    <div class="tracklistTooltipDisplayText">
+      <span>{{ displayedTooltip }}</span>
+      <span class="blinkingDash"> _ </span>
+    </div>
   </div>
 </div>

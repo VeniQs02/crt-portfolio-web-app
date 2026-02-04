@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   width: max-content;
-  /*border: 1px #ccc solid;*/
 }
 
 tracklist-row:hover {
@@ -18,6 +17,21 @@ tracklist-row:hover {
   padding: 30px;
   border: #132123 solid 1px;
   width: max-content;
+}
+
+.tracklistTooltipDisplayText {
+  display: flex;
+  gap: 10px;
+}
+
+.blinkingDash {
+  animation: blinkingDash 1000ms infinite;
+}
+
+@keyframes blinkingDash {
+  55%, 50%, 45% {
+    opacity: 0;
+  }
 }
 
 .visible {

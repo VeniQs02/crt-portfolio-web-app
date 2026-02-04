@@ -5,6 +5,9 @@ body {
   font-style: normal;
   color: #ffc700;
   font-size: 1.1rem;
+  text-shadow: 0 0 0.3em #ffc700,
+  -2px -1px rgba(255, 0, 255, 0.3),
+  2px 1px rgba(80, 255, 255, 0.3);
 }
 
 html {
