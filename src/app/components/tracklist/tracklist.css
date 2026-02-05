@@ -10,18 +10,13 @@ tracklist-row:hover {
 }
 
 .tracklistTooltipDisplay {
-  display: none;
+  display: flex;
   text-align: center;
   flex-direction: column;
   margin: 20px;
   padding: 30px;
   border: #132123 solid 1px;
-  width: max-content;
-}
-
-.tracklistTooltipDisplayText {
-  display: flex;
-  gap: 10px;
+  max-width: 600px;
 }
 
 .blinkingDash {
@@ -32,8 +27,4 @@ tracklist-row:hover {
   55%, 50%, 45% {
     opacity: 0;
   }
-}
-
-.visible {
-  display: flex;
 }

@@ -54,11 +54,12 @@
                  (hoverTooltip)="setTooltip($event)"
                  (hoverTooltipTime)="setTooltipTime($event)"/>
 
-  <div class="tracklistTooltipDisplay" [class.visible]="hasTooltip()">
-    <span>{{ displayedTooltipTime }}</span>
-    <div class="tracklistTooltipDisplayText">
-      <span>{{ displayedTooltip }}</span>
-      <span class="blinkingDash"> _ </span>
+  @if (hasTooltip()) {
+    <div class="tracklistTooltipDisplay">
+      <span>{{ displayedTooltipTime }}</span>
+      <span class="tracklistTooltipDisplayText">{{ displayedTooltip }}
+        <span class="blinkingDash">_</span>
+      </span>
     </div>
-  </div>
+  }
 </div>
