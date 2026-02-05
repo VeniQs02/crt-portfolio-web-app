@@ -2,6 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: #132123 2px;
+  border-style: solid dotted;
+  padding: 16px;
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+h2 {
+  padding: 10% 60% 10% 0;
+}
+
+.tracklistRowWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: max-content;
 }
 
@@ -15,7 +30,8 @@ tracklist-row:hover {
   flex-direction: column;
   margin: 20px;
   padding: 30px;
-  border: #132123 solid 1px;
+  border: #132123 1px;
+  border-style: solid dotted;
   max-width: 600px;
 }
 

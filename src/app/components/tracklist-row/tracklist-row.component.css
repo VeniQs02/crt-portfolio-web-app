@@ -3,6 +3,10 @@
   justify-content: center;
 }
 
+.tracklistNumber{
+  text-transform: uppercase;
+}
+
 .tracklistText {
   display: flex;
   text-align: end;
