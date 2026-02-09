@@ -1,4 +1,41 @@
-.jewelCaseWrapper{
-  display: flex;
+.jewelCaseWrapper {
+  position: relative;
   height: 700px;
+}
+
+.jewelCase {
+  position: relative;
+  z-index: 2;
+  display: flex;
+}
+
+.jewelCaseBackSide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border: #132123 2px;
+  border-style: solid dotted;
+  padding: 16px;
+  height: 100%;
+  aspect-ratio: 1/1;
+  background: #000;
+  transition: transform 0.3s ease;
+}
+
+cd {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+  transition: transform 0.5s ease;
+}
+
+.jewelCaseWrapper:hover cd {
+  transform: translateX(300px) translateY(-50px);
+}
+
+.jewelCaseWrapper:hover .jewelCaseBackSide {
+  transform: translateY(30px) translateX(40px) rotateZ(5deg);
 }

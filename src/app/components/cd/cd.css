@@ -1,17 +1,36 @@
-figure{
+figure {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   aspect-ratio: 1/1;
   padding: 16px;
-  border: 2px solid #132123;
   margin: 0;
 }
 
-div{
+.disk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 100%;
   height: 94%;
   aspect-ratio: 1/1;
-  background: repeating-radial-gradient(#132123 , #777 9px);
+  background: repeating-radial-gradient(#132123, #777 45px);
+}
+
+.emptySpace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  height: 22%;
+  aspect-ratio: 1/1;
+  background: #777;
+}
+
+.gap {
+  border-radius: 100%;
+  height: 40%;
+  aspect-ratio: 1/1;
+  background: #0f0f0f;
 }
