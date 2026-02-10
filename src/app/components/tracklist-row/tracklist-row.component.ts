@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnChanges, Output} from '@angular/core';
 
 @Component({
   selector: 'tracklist-row',
@@ -6,7 +6,7 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
   templateUrl: './tracklist-row.component.html',
   styleUrl: './tracklist-row.component.css',
 })
-export class TracklistRow {
+export class TracklistRow implements OnChanges {
   @Input() tracklistNumber!: string;
   @Input() tracklistText!: string;
   @Input() tracklistTooltip!: string;
