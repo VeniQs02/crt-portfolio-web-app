@@ -2,25 +2,38 @@
   "tracklist": {
     "text": {
       "9bits": "9bits (ft. mobile junior dev)",
-      "bachelorsThesis": "obrona pracy licencjackiej",
-      "nekken": "nekken (ft. frontend stażysta)",
-      "brandbo": "brandbo (ft. grafik montażysta)",
-      "uwb": "uwb informatyka",
-      "pogotowieKomputerowe": "pogotowie komputerowe (ft.serwisant sprzętu)",
-      "highSchool": "liceum na profilu matematycznym",
-      "codingClub": "kółko programistyczne",
+      "bachelorsThesis": "bachelors thesis defence",
+      "nekken": "nekken (ft. frontend intern)",
+      "brandbo": "brandbo (ft. graphic designer & video editor)",
+      "uwb": "uwb computer science",
+      "pogotowieKomputerowe": "pogotowie komputerowe (ft. helpdesk)",
+      "highSchool": "high school, math profile",
+      "codingClub": "coding club",
       "birthDate": ""
     },
     "tooltip": {
-      "9bits": "praca przy wielu projektach mobilkowych, ale przede wszystkim rozwój aplikacji android smyka",
-      "bachelorsThesis": "tematem była modernizacja lokalnego biznesu za pomocą aplikacji internetowej - zdane na bardzo dobre",
-      "nekken": "pierwsze linijki kodu w angularze",
-      "brandbo": "montaż filmów, i tworzenie produktów koncepcyjnych - https://brandbo.pl/",
-      "uwb": "studnia dzienne zdane na dobry plus",
-      "pogotowieKomputerowe": "helpdesk, naprawy sprzętu, instalacja oprogramowania",
-      "highSchool": "matury - roz. angielski 84%, podst. matematyka 93%",
-      "codingClub": "zetknięcie z konceptem kodowania - proste skrypty pythonowe i stronki internetowe w gimnazjum",
-      "birthDate": "wstawić tutaj generyczny programistyczny żart z urodzin typu \"init\""
+      "9bits": "working on many mobile projects, but the main one was developing smyk's mobile app",
+      "bachelorsThesis": "the thesis was about modernising a family business with a web app integration - passed with flying colors",
+      "nekken": "first lines of code in angular",
+      "brandbo": "video editing, creating concept arts for products - https://brandbo.pl/",
+      "uwb": "full-time program, with a final grade of 4+",
+      "pogotowieKomputerowe": "helpdesk, hardware fixes, software instalation",
+      "highSchool": "high school finals - advanced english 84%, maths 93%",
+      "codingClub": "beggining of my coding jurney - simple python scripts and web pages",
+      "birthDate": "insert generic programming joke like \"init\""
+    },
+    "time": {
+      "year": "year",
+      "years1": "years",
+      "years2": "years",
+      "years3": "years",
+      "month": "month",
+      "months1": "months",
+      "months2": "months"
     }
+  },
+  "bottomSection": {
+    "changeLanguage": "change language",
+    "downloadResume": "download resume"
   }
 }

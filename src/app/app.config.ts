@@ -1,6 +1,6 @@
-import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
+import {ApplicationConfig, inject, provideAppInitializer, provideBrowserGlobalErrorListeners} from '@angular/core';
 import { provideRouter } from '@angular/router';
-import {provideTranslateService} from "@ngx-translate/core";
+import {provideTranslateService, TranslateService} from "@ngx-translate/core";
 import {provideTranslateHttpLoader} from "@ngx-translate/http-loader";
 import { routes } from './app.routes';
 
@@ -15,6 +15,10 @@ export const appConfig: ApplicationConfig = {
         prefix: '/i18n/',
         suffix: '.json'
       })
+    }),
+    provideAppInitializer(() => {
+      const  translate = inject(TranslateService);
+      translate.use(translate.getBrowserLang() || "pl");
     }),
   ]
 };

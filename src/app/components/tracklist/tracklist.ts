@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {TracklistRow} from "../tracklist-row/tracklist-row.component";
-import {TranslatePipe} from "@ngx-translate/core";
+import {TranslatePipe, TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'tracklist',
@@ -17,6 +17,8 @@ export class Tracklist {
 
   private today: Date | undefined;
   private currentWorkHireDate: Date = new Date('2024-10-15');
+
+  constructor(public translate: TranslateService) {}
 
   setTooltip(text: string | null) {
     this.displayedTooltip = text;
@@ -45,33 +47,33 @@ export class Tracklist {
     let yearText: string;
     switch (year) {
       case 1:
-        yearText = "rok";
+        yearText = this.translate.instant('tracklist.time.year');
         break;
       case 2:
       case 3:
       case 4:
-        yearText = "lata";
+        yearText = this.translate.instant('tracklist.time.years1');
         break;
       case 3.5:
-        yearText = "roku";
+        yearText = this.translate.instant('tracklist.time.years2');
         break;
       default:
-        yearText = "lat";
+        yearText = this.translate.instant('tracklist.time.years3');
         break;
     }
 
     let monthText: string;
     switch (month) {
       case 1:
-        monthText = "miesiąc";
+        monthText = this.translate.instant('tracklist.time.month');
         break;
       case 2:
       case 3:
       case 4:
-        monthText = "miesiące";
+        monthText = this.translate.instant('tracklist.time.months1');
         break;
       default:
-        monthText = "miesięcy";
+        monthText = this.translate.instant('tracklist.time.months2');
         break;
     }
 
