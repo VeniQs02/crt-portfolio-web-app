@@ -1,5 +1,18 @@
 <section>
-  <button href="/public/">{{'bottomSection.downloadResume' | translate}}</button>
-  <button (click)="emitLanguageChange()">{{'bottomSection.changeLanguage' | translate}}</button>
-  <div> <img> </div>
+  <div>
+    <button href="/public/">{{ 'bottomSection.downloadResume' | translate }}</button>
+    <button (click)="emitLanguageChange()">{{ 'bottomSection.changeLanguage' | translate }}</button>
+  </div>
+
+  <div>
+    <a (click)="copyToClipboard()">
+      <i class="bi bi-envelope"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/jakub-kańgowski">
+      <i class="bi bi-linkedin"></i>
+    </a>
+    <a href="https://github.com/VeniQs02" target="_blank">
+      <i class="bi bi-github"></i>
+    </a>
+  </div>
 </section>

@@ -1,0 +1,19 @@
+section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 120px;
+}
+
+div {
+  display: flex;
+  gap: 16px;
+}
+
+i {
+  font-size: 2em;
+  color: #ffc700;
+}
+
+a:hover i {
+  color: #eeeeee;
+}

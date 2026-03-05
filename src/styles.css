@@ -16,3 +16,19 @@ body {
 html {
   height: 100%;
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: repeating-linear-gradient(90deg, #0f0f0f, #000 4px);
+}
+
+::-webkit-scrollbar-thumb {
+  background: repeating-linear-gradient(90deg, #0f0f0f, #222 4px);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: repeating-linear-gradient(90deg, #0f0f0f, #333 4px);
+}

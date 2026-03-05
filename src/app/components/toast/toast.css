@@ -1,0 +1,15 @@
+.toastWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.toast {
+  position: fixed;
+  top: 20px;
+  background: repeating-linear-gradient(90deg, #0f0f0f, #000 8px);
+  border: 2px solid #132123;
+  padding: 24px;
+  z-index: 100;
+  color: #ffc700;
+}
+
