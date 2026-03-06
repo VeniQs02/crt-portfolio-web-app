@@ -2,10 +2,11 @@ import {Component, EventEmitter, Output} from '@angular/core';
 import {TranslatePipe} from "@ngx-translate/core";
 import {CommonModule} from '@angular/common';
 import {ToastService} from '../../services/toast.service';
+import {HoverTooltip} from '../../directives/hover-tooltip';
 
 @Component({
   selector: 'bottom-section',
-  imports: [CommonModule, TranslatePipe],
+  imports: [CommonModule, TranslatePipe, HoverTooltip],
   templateUrl: './bottom-section.html',
   styleUrl: './bottom-section.css',
 })

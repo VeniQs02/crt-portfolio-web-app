@@ -1,6 +1,8 @@
 .jewelCaseWrapper {
   position: relative;
   height: 600px;
+  transition: transform 0.2s ease;
+
 }
 
 .jewelCase {
@@ -30,6 +32,10 @@ cd {
   left: 0;
   height: 100%;
   transition: transform 0.5s ease;
+}
+
+.jewelCaseWrapper:hover {
+  transform: rotateZ(-1deg);
 }
 
 .jewelCaseWrapper:hover cd {

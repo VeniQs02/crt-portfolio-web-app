@@ -32,8 +32,11 @@
       "months2": "miesięcy"
     }
   },
-  "bottomSection": {
+  "hoverTooltip": {
+    "downloadCV": "pobierz cv",
     "changeLanguage": "zmień język",
-    "downloadResume": "pobierz cv"
+    "copyEmail": "skopiuj email",
+    "goToLinkedIn": "otwórz linkedin",
+    "goToGithub": "otwórz github"
   }
 }

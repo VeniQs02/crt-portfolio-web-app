@@ -1,12 +1,19 @@
 section {
   display: flex;
   justify-content: space-between;
-  padding: 0 120px;
+  padding: 5px 120px 15px;
 }
 
 div {
   display: flex;
   gap: 16px;
+}
+
+button {
+  color: #ffc700;
+  background: none;
+  border: 2px #132123 solid;
+  width: 160px;
 }
 
 i {
