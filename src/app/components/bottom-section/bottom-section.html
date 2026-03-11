@@ -4,10 +4,8 @@
        href="/public/">
       <i class="ri-folder-download-line"></i>
     </a>
-    <a HoverTooltip="{{ 'hoverTooltip.changeLanguage' | translate }}"
-       (click)="emitLanguageChange()">
-      <i class="bi bi-phone-landscape"></i>
-    </a>
+    <flag-button HoverTooltip="{{ 'hoverTooltip.changeLanguage' | translate }}"
+                 (languageChangeEvent)="emitLanguageChange()"/>
   </div>
 
   <div>

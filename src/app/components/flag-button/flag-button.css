@@ -1,0 +1,24 @@
+img {
+  width: 30px;
+  aspect-ratio: 1.5/1;
+  border: #ffc700 3px solid;
+  box-shadow: -2px -1px rgba(255, 0, 255, 0.3),
+  2px 1px rgba(80, 255, 255, 0.3);
+  border-radius: 2px;
+  object-fit: cover;
+
+  transition: transform .5s ease, border .2s ease;
+  transform-style: preserve-3d;
+}
+
+img:hover {
+  border: #eeeeee 3px solid;
+}
+
+.flip {
+  transform: rotateY(180deg) scale(1.05);
+}
+
+:host {
+  perspective: 600px;
+}
