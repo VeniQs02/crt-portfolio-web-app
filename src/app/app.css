@@ -5,7 +5,7 @@ main {
   padding: 20px;
   margin: 10px;
   border-radius: 1px;
-  height: 88vh;
+  height: 85vh;
   border: #132123 1px solid;
 }
 
@@ -31,6 +31,27 @@ main {
     transparent 3px,
     transparent 6px
   );
+}
 
+jewel-case{
+  margin: 10px;
+}
+
+@media screen and (min-height: 850px) {
+  main {
+    height: 87vh;
+  }
+}
+
+@media screen and (min-height: 950px) {
+  main {
+    height: 89vh;
+  }
+}
+
+@media screen and (min-height: 1200px) {
+  main {
+    height: 91vh;
+  }
 }
 

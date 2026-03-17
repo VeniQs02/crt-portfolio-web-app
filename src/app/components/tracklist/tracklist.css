@@ -5,7 +5,7 @@
   border: #132123 2px;
   border-style: solid dotted;
   padding: 16px;
-  height: 100%;
+  height: 500px;
   aspect-ratio: 1/1;
   background-color: #0f0f0f;
 }
@@ -43,5 +43,19 @@ tracklist-row:hover {
 @keyframes blinkingDash {
   55%, 50%, 45% {
     opacity: 0;
+  }
+}
+
+@media screen and (min-height: 900px) {
+  .tracklistWrapper {
+    height: 700px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .tracklistTooltipDisplay {
+    font-size: 1.3rem;
   }
 }
