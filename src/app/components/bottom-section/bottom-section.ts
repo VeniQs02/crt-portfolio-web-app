@@ -14,8 +14,16 @@ import {FlagButton} from '../flag-button/flag-button';
 export class BottomSection {
   @Output() languageChangeEvent = new EventEmitter<void>();
 
+  protected cvLanguageDirectory: string = "CV_Jakub_Kangowski.pdf"
+
   emitLanguageChange() {
     this.languageChangeEvent.emit()
+
+    if (this.cvLanguageDirectory === "CV_Jakub_Kangowski.pdf") {
+      this.cvLanguageDirectory = "CV_Jakub_Kangowski_EN.pdf"
+    } else {
+      this.cvLanguageDirectory = "CV_Jakub_Kangowski.pdf"
+    }
   }
 
   constructor(private toast: ToastService) {
