@@ -18,7 +18,14 @@ export class Tracklist {
   private today: Date | undefined;
   private currentWorkHireDate: Date = new Date('2024-10-15');
 
-  constructor(public translate: TranslateService) {}
+  constructor(public translate: TranslateService) {
+    this.translate.onLangChange.subscribe(() => {
+      if (this.displayedTooltip) {
+        this.displayedTooltipTime = this.displayYearAndMonth();
+        this.displayedTooltip = "cokolwiek"
+      }
+    });
+  }
 
   setTooltip(text: string | null) {
     this.displayedTooltip = text;
@@ -87,5 +94,4 @@ export class Tracklist {
 
     return message;
   }
-
 }
