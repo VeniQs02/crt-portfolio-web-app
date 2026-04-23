@@ -3,7 +3,7 @@
   justify-content: center;
 }
 
-.tracklistNumber{
+.tracklistNumber {
   text-transform: uppercase;
 }
 
@@ -13,13 +13,24 @@
   padding-left: 8px;
 }
 
-p{
+p {
+  font-size: 1rem;
   margin: 0;
   background: #0f0f0f;
 }
 
-p:hover{
+span {
+  font-size: 1rem;
+}
+
+p:hover {
   cursor: help;
+}
+
+@media screen and (min-height: 900px) {
+  p, span {
+    font-size: 1.3rem;
+  }
 }
 
 

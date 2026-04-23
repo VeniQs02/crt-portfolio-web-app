@@ -3,18 +3,27 @@ import {TranslatePipe} from "@ngx-translate/core";
 import {CommonModule} from '@angular/common';
 import {ToastService} from '../../services/toast.service';
 import {HoverTooltip} from '../../directives/hover-tooltip';
+import {FlagButton} from '../flag-button/flag-button';
 
 @Component({
   selector: 'bottom-section',
-  imports: [CommonModule, TranslatePipe, HoverTooltip],
+  imports: [CommonModule, TranslatePipe, HoverTooltip, FlagButton],
   templateUrl: './bottom-section.html',
   styleUrl: './bottom-section.css',
 })
 export class BottomSection {
   @Output() languageChangeEvent = new EventEmitter<void>();
 
+  protected cvLanguageDirectory: string = "CV_Jakub_Kangowski.pdf"
+
   emitLanguageChange() {
     this.languageChangeEvent.emit()
+
+    if (this.cvLanguageDirectory === "CV_Jakub_Kangowski.pdf") {
+      this.cvLanguageDirectory = "CV_Jakub_Kangowski_EN.pdf"
+    } else {
+      this.cvLanguageDirectory = "CV_Jakub_Kangowski.pdf"
+    }
   }
 
   constructor(private toast: ToastService) {

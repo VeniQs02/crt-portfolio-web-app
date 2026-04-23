@@ -1,13 +1,11 @@
 <section>
   <div>
     <a HoverTooltip="{{ 'hoverTooltip.downloadCV' | translate }}"
-       href="/public/">
+       [href]="cvLanguageDirectory" download>
       <i class="ri-folder-download-line"></i>
     </a>
-    <a HoverTooltip="{{ 'hoverTooltip.changeLanguage' | translate }}"
-       (click)="emitLanguageChange()">
-      <i class="bi bi-phone-landscape"></i>
-    </a>
+    <flag-button HoverTooltip="{{ 'hoverTooltip.changeLanguage' | translate }}"
+                 (languageChangeEvent)="emitLanguageChange()"/>
   </div>
 
   <div>
@@ -16,7 +14,7 @@
       <i class="ri-mail-line" style="font-size: 2.4rem"></i>
     </a>
     <a HoverTooltip="{{ 'hoverTooltip.goToLinkedIn' | translate }}"
-       href="https://www.linkedin.com/in/jakub-kańgowski" target="_blank">
+       href="https://www.linkedin.com/in/kańgowski" target="_blank">
       <i class="bi bi-linkedin"></i>
     </a>
     <a HoverTooltip="{{ 'hoverTooltip.goToGithub' | translate }}"

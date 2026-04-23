@@ -12,27 +12,47 @@ import {TranslatePipe, TranslateService} from "@ngx-translate/core";
   styleUrl: './tracklist.css',
 })
 export class Tracklist {
-  protected displayedTooltip: string | null = null;
-  protected displayedTooltipTime: string | null = null;
+  protected displayedTooltipKey: string | null = null;
+
+  protected tooltipYear?: number | null;
+  protected tooltipMonth?: number | null;
 
   private today: Date | undefined;
   private currentWorkHireDate: Date = new Date('2024-10-15');
 
-  constructor(public translate: TranslateService) {}
-
-  setTooltip(text: string | null) {
-    this.displayedTooltip = text;
+  constructor(public translate: TranslateService) {
   }
 
-  setTooltipTime(text: string | null) {
-    this.displayedTooltipTime = text;
+  setTooltip(key: string | null) {
+    this.displayedTooltipKey = key;
+  }
+
+  setTooltipTime(data: { year?: number | null; month?: number | null } | null | undefined) {
+    if (data === undefined) {
+      this.tooltipYear = undefined;
+      this.tooltipMonth = undefined;
+      return;
+    }
+
+    if (data === null) {
+      this.tooltipYear = null;
+      this.tooltipMonth = null;
+      return;
+    }
+
+    this.tooltipYear = data.year;
+    this.tooltipMonth = data.month;
   }
 
   hasTooltip() {
-    return this.displayedTooltip != null
+    return this.displayedTooltipKey != null
   }
 
   displayYearAndMonth(year?: number | null, month?: number | null) {
+    if (year === undefined && month === undefined) {
+      return '';
+    }
+
     if (year == null && month == null) {
       this.today = new Date()
 
@@ -87,5 +107,4 @@ export class Tracklist {
 
     return message;
   }
-
 }

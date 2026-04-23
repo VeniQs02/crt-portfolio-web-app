@@ -5,9 +5,17 @@ import {Directive, HostListener, Input, Renderer2} from '@angular/core';
 })
 export class HoverTooltip {
 
-  @Input('HoverTooltip') text = '';
-
+  private text = '';
   private tooltip?: HTMLElement;
+
+  @Input('HoverTooltip')
+  set tooltipText(value: string) {
+    this.text = value;
+
+    if (this.tooltip) {
+      this.tooltip.textContent = value;
+    }
+  }
 
   constructor(private renderer: Renderer2) {
   }

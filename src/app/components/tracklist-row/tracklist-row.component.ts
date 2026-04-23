@@ -10,9 +10,9 @@ export class TracklistRow implements OnChanges {
   @Input() tracklistNumber!: string;
   @Input() tracklistText!: string;
   @Input() tracklistTooltip!: string;
-  @Input() tracklistTooltipTime!: string;
+  @Input() tracklistTooltipTime!: { year?: number | null; month?: number | null } | null | undefined;
   @Output() hoverTooltip = new EventEmitter<string | null>();
-  @Output() hoverTooltipTime = new EventEmitter<string | null>();
+  @Output() hoverTooltipTime = new EventEmitter<{ year?: number | null; month?: number | null } | null>();
 
   private MAX_LENGTH: number = 48;
 
