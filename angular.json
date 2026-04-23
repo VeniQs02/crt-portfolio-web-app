@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "untitled": {
+    "crt-portfolio-web-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -59,10 +59,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "untitled:build:production"
+              "buildTarget": "crt-portfolio-web-app:build:production"
             },
             "development": {
-              "buildTarget": "untitled:build:development"
+              "buildTarget": "crt-portfolio-web-app:build:development"
             }
           },
           "defaultConfiguration": "development"

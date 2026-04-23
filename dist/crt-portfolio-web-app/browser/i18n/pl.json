@@ -1,0 +1,42 @@
+{
+  "tracklist": {
+    "text": {
+      "9bits": "9bits (ft. mobile junior dev)",
+      "bachelorsThesis": "obrona pracy licencjackiej",
+      "nekken": "nekken (ft. frontend stażysta)",
+      "brandbo": "brandbo (ft. grafik montażysta)",
+      "uwb": "uwb informatyka",
+      "pogotowieKomputerowe": "pogotowie komputerowe (ft.serwisant sprzętu)",
+      "highSchool": "liceum na profilu matematycznym",
+      "codingClub": "kółko programistyczne",
+      "birthDate": ""
+    },
+    "tooltip": {
+      "9bits": "praca przy wielu projektach mobile, przede wszystkim rozwój aplikacji android smyka",
+      "bachelorsThesis": "tematem pracy była modernizacja lokalnego biznesu za pomocą aplikacji internetowej - zdane na dwie oceny bardzo dobre",
+      "nekken": "pierwsze linijki kodu w angularze",
+      "brandbo": "montaż filmów, tworzenie produktów koncepcyjnych - https://brandbo.pl/",
+      "uwb": "studnia dzienne zdane na dobry plus",
+      "pogotowieKomputerowe": "helpdesk, naprawy sprzętu, instalacja oprogramowania",
+      "highSchool": "matury - roz. angielski 84%, matematyka 93%",
+      "codingClub": "zetknięcie z konceptem kodowania - proste skrypty pythonowe i stronki internetowe w gimnazjum",
+      "birthDate": "wstawić tutaj generyczny programistyczny żart typu \"init\""
+    },
+    "time": {
+      "year": "rok",
+      "years1": "lata",
+      "years2": "roku",
+      "years3": "lat",
+      "month": "miesiąc",
+      "months1": "miesiące",
+      "months2": "miesięcy"
+    }
+  },
+  "hoverTooltip": {
+    "downloadCV": "pobierz cv",
+    "changeLanguage": "zmień język",
+    "copyEmail": "skopiuj email",
+    "goToLinkedIn": "otwórz linkedin",
+    "goToGithub": "otwórz github"
+  }
+}
