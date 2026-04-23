@@ -69,6 +69,14 @@
         },
         "test": {
           "builder": "@angular/build:unit-test"
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "name": "Jakub Kańgowski",
+            "email": "jakub.kangowski7@vp.pl",
+            "cname": "VeniQs02"
+          }
         }
       }
     }
