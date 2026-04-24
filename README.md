@@ -1,7 +1,9 @@
 
 # Crt Portfolio
 
-The project is a web application designed to showcase my work and skills.
+The project is a web application designed to showcase my work and skills. 
+
+**‼️WARNING** - It is intended primarily for users with larger screens. While I usually build responsive websites that adapt to different screen sizes, this time I chose to focus solely on the design and an overall old-school feel. In that case, phones and other smaller screens may not display the page correctly.
 
 <img width="128" height="128" alt="fav" src="https://github.com/user-attachments/assets/97da90e8-7666-4cbe-8b2c-ff4193bbb99c" />
 
