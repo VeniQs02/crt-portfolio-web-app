@@ -12,7 +12,7 @@ import {TranslatePipe} from '@ngx-translate/core';
 export class FlagButton {
   @Output() languageChangeEvent = new EventEmitter<void>();
 
-  currentFlag = '/flag_poland.png';
+  currentFlag = 'flag_poland.png';
   isAnimating = false;
 
   flagClick() {
@@ -22,9 +22,9 @@ export class FlagButton {
 
     setTimeout(() => {
       this.currentFlag =
-        this.currentFlag === '/flag_poland.png'
-          ? '/flag_uk.png'
-          : '/flag_poland.png';
+        this.currentFlag === 'flag_poland.png'
+          ? 'flag_uk.png'
+          : 'flag_poland.png';
 
       this.languageChangeEvent.emit();
       this.isAnimating = false;
